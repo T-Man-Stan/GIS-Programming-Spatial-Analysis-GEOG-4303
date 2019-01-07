@@ -1,0 +1,4312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Merge of Gas Stations GR and Gas Prices</name>
+	<open>1</open>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aaff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="Style2-point-1-map">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Style2-point-1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Style2-point-1-hover</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="Style2-point-1">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>1.3</width>
+		</LineStyle>
+	</Style>
+	<Style id="Style2-point-1-hover">
+		<IconStyle>
+			<color>ff00ff55</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Style id="Style2-point-2">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="Style2-point-2-map">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#Style2-point-2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#Style2-point-2-hover</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>1.3</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff000000</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>ff00aaff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="Style2-point-2-hover">
+		<IconStyle>
+			<color>ff0000ff</color>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text>$[description]</text>
+		</BalloonStyle>
+	</Style>
+	<Placemark>
+		<name>The Van Andel Institute</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-85.66792408991172,42.96899207494678,0 -85.66711020312881,42.96899740432336,0 -85.66709162000804,42.9690509544566,0 -85.66708792015135,42.96906497751257,0 -85.66708422513545,42.96907898213549,0 -85.66708424044724,42.96909007912655,0 -85.66707684065547,42.96910139704454,0 -85.66706944705952,42.96910993036999,0 -85.66706576772793,42.96912110660976,0 -85.66705840309811,42.96913513937015,0 -85.66705103743242,42.9691436320744,0 -85.66704001149356,42.96915772674522,0 -85.66703268789333,42.96917169199331,0 -85.66702535860857,42.96918013803415,0 -85.66701070880654,42.96919150887613,0 -85.66699610486559,42.96920559288824,0 -85.66698882226849,42.96921398808953,0 -85.66698519836285,42.96922226784545,0 -85.66698527062773,42.96924135072464,0 -85.66697801408431,42.96925242098333,0 -85.6669744119238,42.96926339043171,0 -85.66695988175918,42.96927187978928,0 -85.66694902697861,42.96928298313281,0 -85.6669418031709,42.969296638983,0 -85.66693816782357,42.96929938447087,0 -85.66693092875931,42.96931296924395,0 -85.66692369717076,42.96932654182864,0 -85.66691285619824,42.96934016922279,0 -85.66690563419476,42.96934834694261,0 -85.66688757962045,42.96935936311066,0 -85.66688398643065,42.96936478916346,0 -85.66686959091497,42.96937573424626,0 -85.66685520932002,42.96938397986538,0 -85.66684445488811,42.96938950405431,0 -85.66683014353686,42.96939775129101,0 -85.66681585836024,42.96940598336835,0 -85.66680159928109,42.96941420057937,0 -85.66679449317797,42.96942230220944,0 -85.66677672529339,42.9694332037116,0 -85.66676609991173,42.96944398888116,0 -85.66675903836654,42.96945471515917,0 -85.66674843924331,42.96946547106818,0 -85.66673075796732,42.96947098302709,0 -85.66671661353198,42.96947907570514,0 -85.6666988975533,42.96948716282996,0 -85.66668828404561,42.96949253768618,0 -85.6666706161472,42.96950060243957,0 -85.66666000503307,42.96950859285462,0 -85.6666422681441,42.96951396111382,0 -85.6666387197526,42.96951397820966,0 -85.66667980937206,42.97033445566004,0 -85.66770038141677,42.97032959603521,0 -85.66766955777402,42.96972197873924,0 -85.66799266784963,42.96969784318341,0 -85.66797498117711,42.96926853448161,0 -85.66795556507786,42.9689972442895,0 -85.66792408991172,42.96899207494678,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>The Calder Painting</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-85.67156421967086,42.96871254204571,0 -85.67105192385783,42.96872713214875,0 -85.67106525209883,42.96908569718955,0 -85.67158029936641,42.96907986777964,0 -85.67156421967086,42.96871254204571,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>The Calder Sculpture</name>
+		<styleUrl>#msn_ylw-pushpin</styleUrl>
+		<Polygon>
+			<tessellate>1</tessellate>
+			<outerBoundaryIs>
+				<LinearRing>
+					<coordinates>
+						-85.67088446523303,42.96920444209978,0 -85.67060964888644,42.96920789254726,0 -85.67063077287355,42.96941365791892,0 -85.67089775689789,42.96940304376604,0 -85.67088446523303,42.96920444209978,0 
+					</coordinates>
+				</LinearRing>
+			</outerBoundaryIs>
+		</Polygon>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>0-550 Baldwin St, Jenison, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 0-550 Baldwin St, Jenison, MI<br>
+<b>Price: </b> $3.79
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.79</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.796798,42.907376,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.796798,42.907376,0 -85.796798,42.907376,0 -85.796798,42.907376,0 -85.796798,42.907376,0 -85.796798,42.907376,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>1 Hall St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 1 Hall St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.667638,42.941658,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>1 Hall St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 1 Hall St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.667638,42.941658,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>1 Hall St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 1 Hall St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.667638,42.941658,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>1 Hall St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 1 Hall St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.667638,42.941658,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 -85.667638,42.941658,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>1001 W Fulton St, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 1001 W Fulton St, Grand Rapids, MI<br>
+<b>Price: </b> $3.72
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.72</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.69251800000001,42.963663,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.69251800000001,42.963663,0 -85.69251800000001,42.963663,0 -85.69251800000001,42.963663,0 -85.69251800000001,42.963663,0 -85.69251800000001,42.963663,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Four Star</name>
+		<address>1045 Chicago Dr SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Four Star<br>
+<b>Address:</b> 1045 Chicago Dr SW, Wyoming, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.693512,42.93564,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.693512,42.93564,0 -85.693512,42.93564,0 -85.693512,42.93564,0 -85.693512,42.93564,0 -85.693512,42.93564,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>1133 Leonard St NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 1133 Leonard St NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.64026800000001,42.984706,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.64026800000001,42.984706,0 -85.64026800000001,42.984706,0 -85.64026800000001,42.984706,0 -85.64026800000001,42.984706,0 -85.64026800000001,42.984706,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Consolidated Stations</name>
+		<address>1150 Fuller Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Consolidated Stations<br>
+<b>Address:</b> 1150 Fuller Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.639865,42.984063,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.639865,42.984063,0 -85.639865,42.984063,0 -85.639865,42.984063,0 -85.639865,42.984063,0 -85.639865,42.984063,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>1169 E Beltline Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 1169 E Beltline Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.591261,42.983864,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.591261,42.983864,0 -85.591261,42.983864,0 -85.591261,42.983864,0 -85.591261,42.983864,0 -85.591261,42.983864,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Family Fare</name>
+		<address>1201 Leonard St NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Family Fare<br>
+<b>Address:</b> 1201 Leonard St NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.639408,42.984762,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.639408,42.984762,0 -85.639408,42.984762,0 -85.639408,42.984762,0 -85.639408,42.984762,0 -85.639408,42.984762,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>1201 Michigan St NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 1201 Michigan St NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.639656,42.969991,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.639656,42.969991,0 -85.639656,42.969991,0 -85.639656,42.969991,0 -85.639656,42.969991,0 -85.639656,42.969991,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Consolidated Stations</name>
+		<address>1212 Michigan St NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Consolidated Stations<br>
+<b>Address:</b> 1212 Michigan St NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.63935600000001,42.969697,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.63935600000001,42.969697,0 -85.63935600000001,42.969697,0 -85.63935600000001,42.969697,0 -85.63935600000001,42.969697,0 -85.63935600000001,42.969697,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>1229 Walker Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 1229 Walker Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.69870400000001,42.982505,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.69870400000001,42.982505,0 -85.69870400000001,42.982505,0 -85.69870400000001,42.982505,0 -85.69870400000001,42.982505,0 -85.69870400000001,42.982505,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>1253 Burton St SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 1253 Burton St SW, Wyoming, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.69813000000001,42.928486,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.69813000000001,42.928486,0 -85.69813000000001,42.928486,0 -85.69813000000001,42.928486,0 -85.69813000000001,42.928486,0 -85.69813000000001,42.928486,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>1349 Alpine Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 1349 Alpine Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.72
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.72</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68853799999999,42.988608,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68853799999999,42.988608,0 -85.68853799999999,42.988608,0 -85.68853799999999,42.988608,0 -85.68853799999999,42.988608,0 -85.68853799999999,42.988608,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>1355 Post Dr NE, Belmont, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 1355 Post Dr NE, Belmont, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.63445299999999,43.09188,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.63445299999999,43.09188,0 -85.63445299999999,43.09188,0 -85.63445299999999,43.09188,0 -85.63445299999999,43.09188,0 -85.63445299999999,43.09188,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>1405 Burton St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 1405 Burton St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.63305,42.927171,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.63305,42.927171,0 -85.63305,42.927171,0 -85.63305,42.927171,0 -85.63305,42.927171,0 -85.63305,42.927171,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Next Door Food Store</name>
+		<address>14226 Ironwood Dr NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Next Door Food Store<br>
+<b>Address:</b> 14226 Ironwood Dr NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.804187,43.028452,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.804187,43.028452,0 -85.804187,43.028452,0 -85.804187,43.028452,0 -85.804187,43.028452,0 -85.804187,43.028452,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>1460 Franklin St, Marne, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 1460 Franklin St, Marne, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.824378,43.03802,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.824378,43.03802,0 -85.824378,43.03802,0 -85.824378,43.03802,0 -85.824378,43.03802,0 -85.824378,43.03802,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>150 36th St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 150 36th St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.669879,42.898392,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.669879,42.898392,0 -85.669879,42.898392,0 -85.669879,42.898392,0 -85.669879,42.898392,0 -85.669879,42.898392,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Circle K</name>
+		<address>1530 44th St SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Circle K<br>
+<b>Address:</b> 1530 44th St SW, Wyoming, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.702708,42.883984,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.702708,42.883984,0 -85.702708,42.883984,0 -85.702708,42.883984,0 -85.702708,42.883984,0 -85.702708,42.883984,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>1533 Leonard St NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 1533 Leonard St NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.63097999999999,42.984718,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.63097999999999,42.984718,0 -85.63097999999999,42.984718,0 -85.63097999999999,42.984718,0 -85.63097999999999,42.984718,0 -85.63097999999999,42.984718,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>1560 Lake Dr SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 1560 Lake Dr SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.630735,42.954595,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.630735,42.954595,0 -85.630735,42.954595,0 -85.630735,42.954595,0 -85.630735,42.954595,0 -85.630735,42.954595,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>1600 28th St SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 1600 28th St SW, Wyoming, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.70594,42.912795,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.70594,42.912795,0 -85.70594,42.912795,0 -85.70594,42.912795,0 -85.70594,42.912795,0 -85.70594,42.912795,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Petro Mart</name>
+		<address>1601 Eastern Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Petro Mart<br>
+<b>Address:</b> 1601 Eastern Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.64896400000001,42.934368,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.64896400000001,42.934368,0 -85.64896400000001,42.934368,0 -85.64896400000001,42.934368,0 -85.64896400000001,42.934368,0 -85.64896400000001,42.934368,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>1625 Marketplace Dr SE, Caledonia, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 1625 Marketplace Dr SE, Caledonia, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.621402,42.845666,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.621402,42.845666,0 -85.621402,42.845666,0 -85.621402,42.845666,0 -85.621402,42.845666,0 -85.621402,42.845666,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>1639 Leonard St NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 1639 Leonard St NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.709113,42.986279,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.709113,42.986279,0 -85.709113,42.986279,0 -85.709113,42.986279,0 -85.709113,42.986279,0 -85.709113,42.986279,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Crystal Flash Energy</name>
+		<address>1760 Alpine Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Crystal Flash Energy<br>
+<b>Address:</b> 1760 Alpine Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.688065,42.99648,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.688065,42.99648,0 -85.688065,42.99648,0 -85.688065,42.99648,0 -85.688065,42.99648,0 -85.688065,42.99648,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>1801 Monroe Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 1801 Monroe Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.67062900000001,42.995829,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.67062900000001,42.995829,0 -85.67062900000001,42.995829,0 -85.67062900000001,42.995829,0 -85.67062900000001,42.995829,0 -85.67062900000001,42.995829,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>D&amp;W Quick Stop</name>
+		<address>1810 Breton Rd SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> D&amp;W Quick Stop<br>
+<b>Address:</b> 1810 Breton Rd SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.609421,42.930566,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.609421,42.930566,0 -85.609421,42.930566,0 -85.609421,42.930566,0 -85.609421,42.930566,0 -85.609421,42.930566,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>1815 Baldwin St, Jenison, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 1815 Baldwin St, Jenison, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.82727300000001,42.907553,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.82727300000001,42.907553,0 -85.82727300000001,42.907553,0 -85.82727300000001,42.907553,0 -85.82727300000001,42.907553,0 -85.82727300000001,42.907553,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>1914 Willard Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 1914 Willard Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.651487,42.928693,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.651487,42.928693,0 -85.651487,42.928693,0 -85.651487,42.928693,0 -85.651487,42.928693,0 -85.651487,42.928693,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>1920 44th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 1920 44th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.618064,42.882693,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.618064,42.882693,0 -85.618064,42.882693,0 -85.618064,42.882693,0 -85.618064,42.882693,0 -85.618064,42.882693,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>1965 Fuller Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 1965 Fuller Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.64044199999999,42.998678,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.64044199999999,42.998678,0 -85.64044199999999,42.998678,0 -85.64044199999999,42.998678,0 -85.64044199999999,42.998678,0 -85.64044199999999,42.998678,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>1991 Baldwin St, Jenison, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 1991 Baldwin St, Jenison, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.831458,42.907433,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.831458,42.907433,0 -85.831458,42.907433,0 -85.831458,42.907433,0 -85.831458,42.907433,0 -85.831458,42.907433,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>1999 E Beltline Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 1999 E Beltline Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.72
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.72</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.590548,42.996401,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>1999 E Beltline Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 1999 E Beltline Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.590548,42.996401,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>1999 E Beltline Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 1999 E Beltline Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.72
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.72</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.590548,42.996401,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>1999 E Beltline Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 1999 E Beltline Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.590548,42.996401,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 -85.590548,42.996401,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>2035 Lake Michigan Dr NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 2035 Lake Michigan Dr NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.718341,42.971895,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.718341,42.971895,0 -85.718341,42.971895,0 -85.718341,42.971895,0 -85.718341,42.971895,0 -85.718341,42.971895,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>206 S State St, Sparta, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 206 S State St, Sparta, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.71007899999999,43.156957,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.71007899999999,43.156957,0 -85.71007899999999,43.156957,0 -85.71007899999999,43.156957,0 -85.71007899999999,43.156957,0 -85.71007899999999,43.156957,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Value Market Express</name>
+		<address>2111 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Value Market Express<br>
+<b>Address:</b> 2111 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.655132,43.001163,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Value Market Express</name>
+		<address>2111 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Value Market Express<br>
+<b>Address:</b> 2111 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.655132,43.001163,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>2111 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 2111 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.655132,43.001163,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>2111 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 2111 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.655132,43.001163,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 -85.655132,43.001163,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>2171 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 2171 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.65431700000001,43.002694,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.65431700000001,43.002694,0 -85.65431700000001,43.002694,0 -85.65431700000001,43.002694,0 -85.65431700000001,43.002694,0 -85.65431700000001,43.002694,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>2257 Chicago Dr SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 2257 Chicago Dr SW, Wyoming, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.72179300000001,42.932173,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.72179300000001,42.932173,0 -85.72179300000001,42.932173,0 -85.72179300000001,42.932173,0 -85.72179300000001,42.932173,0 -85.72179300000001,42.932173,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>2271 Port Sheldon St, Jenison, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 2271 Port Sheldon St, Jenison, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.838566,42.888044,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.838566,42.888044,0 -85.838566,42.888044,0 -85.838566,42.888044,0 -85.838566,42.888044,0 -85.838566,42.888044,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>2356 Porter St SW, Wyoming, M</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 2356 Porter St SW, Wyoming, M<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.724688,42.920936,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.724688,42.920936,0 -85.724688,42.920936,0 -85.724688,42.920936,0 -85.724688,42.920936,0 -85.724688,42.920936,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>2363 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 2363 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.60865,42.91302,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.60865,42.91302,0 -85.60865,42.91302,0 -85.60865,42.91302,0 -85.60865,42.91302,0 -85.60865,42.91302,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>2366 Alpine Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 2366 Alpine Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68766700000001,43.006311,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68766700000001,43.006311,0 -85.68766700000001,43.006311,0 -85.68766700000001,43.006311,0 -85.68766700000001,43.006311,0 -85.68766700000001,43.006311,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>2400 28th St SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 2400 28th St SW, Wyoming, MI<br>
+<b>Price: </b> $3.8
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.8</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.725167,42.91363,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.725167,42.91363,0 -85.725167,42.91363,0 -85.725167,42.91363,0 -85.725167,42.91363,0 -85.725167,42.91363,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>2411 Burton St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 2411 Burton St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.60856,42.927397,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.60856,42.927397,0 -85.60856,42.927397,0 -85.60856,42.927397,0 -85.60856,42.927397,0 -85.60856,42.927397,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>248 Cherry St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 248 Cherry St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.675343,42.959484,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.675343,42.959484,0 -85.675343,42.959484,0 -85.675343,42.959484,0 -85.675343,42.959484,0 -85.675343,42.959484,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>2600 E Beltline Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 2600 E Beltline Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.583705,42.916387,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.583705,42.916387,0 -85.583705,42.916387,0 -85.583705,42.916387,0 -85.583705,42.916387,0 -85.583705,42.916387,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>275 84th St SW, Byron Center, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 275 84th St SW, Byron Center, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.670368,42.81201,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.670368,42.81201,0 -85.670368,42.81201,0 -85.670368,42.81201,0 -85.670368,42.81201,0 -85.670368,42.81201,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>2750 Lake Michigan Dr NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 2750 Lake Michigan Dr NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.736679,42.97127,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.736679,42.97127,0 -85.736679,42.97127,0 -85.736679,42.97127,0 -85.736679,42.97127,0 -85.736679,42.97127,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>2754 Alpine Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 2754 Alpine Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.688327,43.013889,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.688327,43.013889,0 -85.688327,43.013889,0 -85.688327,43.013889,0 -85.688327,43.013889,0 -85.688327,43.013889,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>2763 Madison Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 2763 Madison Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.656964,42.913315,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.656964,42.913315,0 -85.656964,42.913315,0 -85.656964,42.913315,0 -85.656964,42.913315,0 -85.656964,42.913315,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>2770 10 Mile Rd NE, Rockford, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 2770 10 Mile Rd NE, Rockford, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.601732,43.116677,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.601732,43.116677,0 -85.601732,43.116677,0 -85.601732,43.116677,0 -85.601732,43.116677,0 -85.601732,43.116677,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>2807 Port Sheldon St, Hudsonville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 2807 Port Sheldon St, Hudsonville, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.852345,42.887669,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.852345,42.887669,0 -85.852345,42.887669,0 -85.852345,42.887669,0 -85.852345,42.887669,0 -85.852345,42.887669,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>2808 E Beltline Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 2808 E Beltline Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.589291,43.013623,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.589291,43.013623,0 -85.589291,43.013623,0 -85.589291,43.013623,0 -85.589291,43.013623,0 -85.589291,43.013623,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>284 84th St SW, Byron Center, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 284 84th St SW, Byron Center, MI<br>
+<b>Price: </b> $3.86
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.86</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.66931,42.811715,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.66931,42.811715,0 -85.66931,42.811715,0 -85.66931,42.811715,0 -85.66931,42.811715,0 -85.66931,42.811715,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>2900 Kalamazoo Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 2900 Kalamazoo Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.627672,42.911556,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.627672,42.911556,0 -85.627672,42.911556,0 -85.627672,42.911556,0 -85.627672,42.911556,0 -85.627672,42.911556,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>3050 Fruit Ridge Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 3050 Fruit Ridge Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.762794,43.020502,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.762794,43.020502,0 -85.762794,43.020502,0 -85.762794,43.020502,0 -85.762794,43.020502,0 -85.762794,43.020502,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>3110 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 3110 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.63834900000001,43.018338,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.63834900000001,43.018338,0 -85.63834900000001,43.018338,0 -85.63834900000001,43.018338,0 -85.63834900000001,43.018338,0 -85.63834900000001,43.018338,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>3214 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 3214 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.58795499999999,42.912112,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.58795499999999,42.912112,0 -85.58795499999999,42.912112,0 -85.58795499999999,42.912112,0 -85.58795499999999,42.912112,0 -85.58795499999999,42.912112,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>3221 S Division Ave, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 3221 S Division Ave, Wyoming, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.66563600000001,42.90528,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.66563600000001,42.90528,0 -85.66563600000001,42.90528,0 -85.66563600000001,42.90528,0 -85.66563600000001,42.90528,0 -85.66563600000001,42.90528,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>3315 Division Ave S, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 3315 Division Ave S, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.665988,42.903736,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.665988,42.903736,0 -85.665988,42.903736,0 -85.665988,42.903736,0 -85.665988,42.903736,0 -85.665988,42.903736,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>335 Burton St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 335 Burton St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.675021,42.92785,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.675021,42.92785,0 -85.675021,42.92785,0 -85.675021,42.92785,0 -85.675021,42.92785,0 -85.675021,42.92785,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>3434 Remembrance Rd NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 3434 Remembrance Rd NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.75351499999999,42.990099,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.75351499999999,42.990099,0 -85.75351499999999,42.990099,0 -85.75351499999999,42.990099,0 -85.75351499999999,42.990099,0 -85.75351499999999,42.990099,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>346 Fulton St W, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 346 Fulton St W, Grand Rapids, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.679171,42.96313,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.679171,42.96313,0 -85.679171,42.96313,0 -85.679171,42.96313,0 -85.679171,42.96313,0 -85.679171,42.96313,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>3495 68th St SE, Dutton, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 3495 68th St SE, Dutton, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.578909,42.841128,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.578909,42.841128,0 -85.578909,42.841128,0 -85.578909,42.841128,0 -85.578909,42.841128,0 -85.578909,42.841128,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>D&amp;P Gasoline</name>
+		<address>3600 Clyde Park Ave SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> D&amp;P Gasoline<br>
+<b>Address:</b> 3600 Clyde Park Ave SW, Wyoming, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.684654,42.898541,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.684654,42.898541,0 -85.684654,42.898541,0 -85.684654,42.898541,0 -85.684654,42.898541,0 -85.684654,42.898541,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>C Store</name>
+		<address>3609 Burlingame Ave SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> C Store<br>
+<b>Address:</b> 3609 Burlingame Ave SW, Wyoming, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.704756,42.898295,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.704756,42.898295,0 -85.704756,42.898295,0 -85.704756,42.898295,0 -85.704756,42.898295,0 -85.704756,42.898295,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>EZ Mart</name>
+		<address>3623 Alpine Ave NW, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> EZ Mart<br>
+<b>Address:</b> 3623 Alpine Ave NW, Comstock Park, MI<br>
+<b>Price: </b> $3.8
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.8</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.690043,43.029511,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.690043,43.029511,0 -85.690043,43.029511,0 -85.690043,43.029511,0 -85.690043,43.029511,0 -85.690043,43.029511,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>3700 Chicago Dr, Hudsonville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 3700 Chicago Dr, Hudsonville, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.87397300000001,42.862332,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.87397300000001,42.862332,0 -85.87397300000001,42.862332,0 -85.87397300000001,42.862332,0 -85.87397300000001,42.862332,0 -85.87397300000001,42.862332,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Value Market Express</name>
+		<address>3744 3 Mile Rd NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Value Market Express<br>
+<b>Address:</b> 3744 3 Mile Rd NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.76160900000001,43.015362,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.76160900000001,43.015362,0 -85.76160900000001,43.015362,0 -85.76160900000001,43.015362,0 -85.76160900000001,43.015362,0 -85.76160900000001,43.015362,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>3757 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 3757 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.627201,43.03331,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.627201,43.03331,0 -85.627201,43.03331,0 -85.627201,43.03331,0 -85.627201,43.03331,0 -85.627201,43.03331,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Nj Quick Mart</name>
+		<address>3830 Chicago Dr SW, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Nj Quick Mart<br>
+<b>Address:</b> 3830 Chicago Dr SW, Grandville, MI<br>
+<b>Price: </b> $3.81
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.81</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.758905,42.910847,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.758905,42.910847,0 -85.758905,42.910847,0 -85.758905,42.910847,0 -85.758905,42.910847,0 -85.758905,42.910847,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>3895 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 3895 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.622254,43.034124,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.622254,43.034124,0 -85.622254,43.034124,0 -85.622254,43.034124,0 -85.622254,43.034124,0 -85.622254,43.034124,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>3960 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 3960 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.568575,42.91253,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.568575,42.91253,0 -85.568575,42.91253,0 -85.568575,42.91253,0 -85.568575,42.91253,0 -85.568575,42.91253,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>3960 28th St SW, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 3960 28th St SW, Grandville, MI<br>
+<b>Price: </b> $3.81
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.81</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.762309,42.913358,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.762309,42.913358,0 -85.762309,42.913358,0 -85.762309,42.913358,0 -85.762309,42.913358,0 -85.762309,42.913358,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>3980 44th St SW, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 3980 44th St SW, Grandville, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.761956,42.884255,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.761956,42.884255,0 -85.761956,42.884255,0 -85.761956,42.884255,0 -85.761956,42.884255,0 -85.761956,42.884255,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>3980 44th street, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 3980 44th street, Grandville, MI<br>
+<b>Price: </b> $3.84
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.84</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.761956,42.884255,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.761956,42.884255,0 -85.761956,42.884255,0 -85.761956,42.884255,0 -85.761956,42.884255,0 -85.761956,42.884255,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4018 Cascade Rd SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4018 Cascade Rd SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.57023599999999,42.947743,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.57023599999999,42.947743,0 -85.57023599999999,42.947743,0 -85.57023599999999,42.947743,0 -85.57023599999999,42.947743,0 -85.57023599999999,42.947743,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>4033 Cascade Rd SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 4033 Cascade Rd SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.569238,42.948355,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.569238,42.948355,0 -85.569238,42.948355,0 -85.569238,42.948355,0 -85.569238,42.948355,0 -85.569238,42.948355,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4045 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4045 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.56761400000001,42.913008,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.56761400000001,42.913008,0 -85.56761400000001,42.913008,0 -85.56761400000001,42.913008,0 -85.56761400000001,42.913008,0 -85.56761400000001,42.913008,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>4088 Lake Michigan Dr NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 4088 Lake Michigan Dr NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.768593,42.971803,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.768593,42.971803,0 -85.768593,42.971803,0 -85.768593,42.971803,0 -85.768593,42.971803,0 -85.768593,42.971803,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4096 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4096 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.613972,43.036996,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.613972,43.036996,0 -85.613972,43.036996,0 -85.613972,43.036996,0 -85.613972,43.036996,0 -85.613972,43.036996,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4121 W River Dr NE, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4121 W River Dr NE, Comstock Park, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.663506,43.037944,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.663506,43.037944,0 -85.663506,43.037944,0 -85.663506,43.037944,0 -85.663506,43.037944,0 -85.663506,43.037944,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>415 Division Ave S, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 415 Division Ave S, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.668071,42.95562,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.668071,42.95562,0 -85.668071,42.95562,0 -85.668071,42.95562,0 -85.668071,42.95562,0 -85.668071,42.95562,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>420 Baldwin St, Jenison, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 420 Baldwin St, Jenison, MI<br>
+<b>Price: </b> $3.81
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.81</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.792474,42.906831,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.792474,42.906831,0 -85.792474,42.906831,0 -85.792474,42.906831,0 -85.792474,42.906831,0 -85.792474,42.906831,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>4219 Kalamazoo Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 4219 Kalamazoo Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.626676,42.886936,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.626676,42.886936,0 -85.626676,42.886936,0 -85.626676,42.886936,0 -85.626676,42.886936,0 -85.626676,42.886936,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4235 Chicago Dr SW, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4235 Chicago Dr SW, Grandville, MI<br>
+<b>Price: </b> $3.79
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.79</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.768528,42.908081,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.768528,42.908081,0 -85.768528,42.908081,0 -85.768528,42.908081,0 -85.768528,42.908081,0 -85.768528,42.908081,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>4258 Alpine Ave NW, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 4258 Alpine Ave NW, Comstock Park, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68909600000001,43.040869,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68909600000001,43.040869,0 -85.68909600000001,43.040869,0 -85.68909600000001,43.040869,0 -85.68909600000001,43.040869,0 -85.68909600000001,43.040869,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Admiral Petroleum</name>
+		<address>4315 Chicago Dr SW, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Admiral Petroleum<br>
+<b>Address:</b> 4315 Chicago Dr SW, Grandville, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.770156,42.907523,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.770156,42.907523,0 -85.770156,42.907523,0 -85.770156,42.907523,0 -85.770156,42.907523,0 -85.770156,42.907523,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Wesco World</name>
+		<address>434 S State St, Sparta, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Wesco World<br>
+<b>Address:</b> 434 S State St, Sparta, MI<br>
+<b>Price: </b> $3.86
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.86</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.709429,43.152725,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.709429,43.152725,0 -85.709429,43.152725,0 -85.709429,43.152725,0 -85.709429,43.152725,0 -85.709429,43.152725,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>438 Stocking Ave NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 438 Stocking Ave NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68461499999999,42.971716,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68461499999999,42.971716,0 -85.68461499999999,42.971716,0 -85.68461499999999,42.971716,0 -85.68461499999999,42.971716,0 -85.68461499999999,42.971716,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>4380 Kenowa Ave SW, Grandville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 4380 Kenowa Ave SW, Grandville, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.781768,42.885705,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.781768,42.885705,0 -85.781768,42.885705,0 -85.781768,42.885705,0 -85.781768,42.885705,0 -85.781768,42.885705,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4390 Byron Center Ave SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4390 Byron Center Ave SW, Wyoming, MI<br>
+<b>Price: </b> $3.79
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.79</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.723608,42.8851,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.723608,42.8851,0 -85.723608,42.8851,0 -85.723608,42.8851,0 -85.723608,42.8851,0 -85.723608,42.8851,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>4405 S Division Ave, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 4405 S Division Ave, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.664743,42.88377,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.664743,42.88377,0 -85.664743,42.88377,0 -85.664743,42.88377,0 -85.664743,42.88377,0 -85.664743,42.88377,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Best Service</name>
+		<address>4417 Remembrance Rd NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Best Service<br>
+<b>Address:</b> 4417 Remembrance Rd NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.778631,43.010287,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.778631,43.010287,0 -85.778631,43.010287,0 -85.778631,43.010287,0 -85.778631,43.010287,0 -85.778631,43.010287,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>4429 Breton Rd SE, Kentwood, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 4429 Breton Rd SE, Kentwood, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.606826,42.882821,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.606826,42.882821,0 -85.606826,42.882821,0 -85.606826,42.882821,0 -85.606826,42.882821,0 -85.606826,42.882821,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>4558 W River Dr NE, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 4558 W River Dr NE, Comstock Park, MI<br>
+<b>Price: </b> $3.81
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.81</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.65757600000001,43.04552,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.65757600000001,43.04552,0 -85.65757600000001,43.04552,0 -85.65757600000001,43.04552,0 -85.65757600000001,43.04552,0 -85.65757600000001,43.04552,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>C Store</name>
+		<address>4591 Cascade Rd SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> C Store<br>
+<b>Address:</b> 4591 Cascade Rd SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.556224,42.946438,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.556224,42.946438,0 -85.556224,42.946438,0 -85.556224,42.946438,0 -85.556224,42.946438,0 -85.556224,42.946438,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Next Door Food Store</name>
+		<address>4616 Alpine Ave NW, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Next Door Food Store<br>
+<b>Address:</b> 4616 Alpine Ave NW, Comstock Park, MI<br>
+<b>Price: </b> $3.79
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.79</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.689121,43.047567,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.689121,43.047567,0 -85.689121,43.047567,0 -85.689121,43.047567,0 -85.689121,43.047567,0 -85.689121,43.047567,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4617 Lake Michigan Dr, Allendale, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4617 Lake Michigan Dr, Allendale, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.899102,42.97269,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.899102,42.97269,0 -85.899102,42.97269,0 -85.899102,42.97269,0 -85.899102,42.97269,0 -85.899102,42.97269,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>4640 32nd Ave, Hudsonville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 4640 32nd Ave, Hudsonville, MI<br>
+<b>Price: </b> $3.86
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.86</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.860468,42.85383,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.860468,42.85383,0 -85.860468,42.85383,0 -85.860468,42.85383,0 -85.860468,42.85383,0 -85.860468,42.85383,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>4665 44th St SE, Kentwood, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 4665 44th St SE, Kentwood, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.549854,42.884235,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.549854,42.884235,0 -85.549854,42.884235,0 -85.549854,42.884235,0 -85.549854,42.884235,0 -85.549854,42.884235,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>470 E Division St, Rockford, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 470 E Division St, Rockford, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.54934,43.117151,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.54934,43.117151,0 -85.54934,43.117151,0 -85.54934,43.117151,0 -85.54934,43.117151,0 -85.54934,43.117151,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Circle K</name>
+		<address>4811 W River Dr NE, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Circle K<br>
+<b>Address:</b> 4811 W River Dr NE, Comstock Park, MI<br>
+<b>Price: </b> $3.79
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.79</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.653334,43.051016,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.653334,43.051016,0 -85.653334,43.051016,0 -85.653334,43.051016,0 -85.653334,43.051016,0 -85.653334,43.051016,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>4842 Port Sheldon St, Hudsonville, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 4842 Port Sheldon St, Hudsonville, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.902653,42.884713,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.902653,42.884713,0 -85.902653,42.884713,0 -85.902653,42.884713,0 -85.902653,42.884713,0 -85.902653,42.884713,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Marathon</name>
+		<address>4908 Division Ave S, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Marathon<br>
+<b>Address:</b> 4908 Division Ave S, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.66373,42.874521,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.66373,42.874521,0 -85.66373,42.874521,0 -85.66373,42.874521,0 -85.66373,42.874521,0 -85.66373,42.874521,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>4919 Town Center Ct SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 4919 Town Center Ct SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.544825,42.859303,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.544825,42.859303,0 -85.544825,42.859303,0 -85.544825,42.859303,0 -85.544825,42.859303,0 -85.544825,42.859303,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Metro</name>
+		<address>5 28th St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Metro<br>
+<b>Address:</b> 5 28th St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.666522,42.913507,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.666522,42.913507,0 -85.666522,42.913507,0 -85.666522,42.913507,0 -85.666522,42.913507,0 -85.666522,42.913507,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Thunder Bay</name>
+		<address>5000 Plainfield Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Thunder Bay<br>
+<b>Address:</b> 5000 Plainfield Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.59657799999999,43.052114,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.59657799999999,43.052114,0 -85.59657799999999,43.052114,0 -85.59657799999999,43.052114,0 -85.59657799999999,43.052114,0 -85.59657799999999,43.052114,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Consolidated Stations</name>
+		<address>501 68th St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Consolidated Stations<br>
+<b>Address:</b> 501 68th St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.676249,42.840924,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.676249,42.840924,0 -85.676249,42.840924,0 -85.676249,42.840924,0 -85.676249,42.840924,0 -85.676249,42.840924,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Circle K</name>
+		<address>514 Michigan St NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Circle K<br>
+<b>Address:</b> 514 Michigan St NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.72
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.72</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.656475,42.969831,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.656475,42.969831,0 -85.656475,42.969831,0 -85.656475,42.969831,0 -85.656475,42.969831,0 -85.656475,42.969831,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>5155 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 5155 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.540616,42.913151,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.540616,42.913151,0 -85.540616,42.913151,0 -85.540616,42.913151,0 -85.540616,42.913151,0 -85.540616,42.913151,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>5173 Broadmoor Ave SE, Kentwood, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 5173 Broadmoor Ave SE, Kentwood, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.554636,42.869454,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.554636,42.869454,0 -85.554636,42.869454,0 -85.554636,42.869454,0 -85.554636,42.869454,0 -85.554636,42.869454,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Value Market Express</name>
+		<address>5185 Kalamazoo Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Value Market Express<br>
+<b>Address:</b> 5185 Kalamazoo Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.62526699999999,42.86947,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.62526699999999,42.86947,0 -85.62526699999999,42.86947,0 -85.62526699999999,42.86947,0 -85.62526699999999,42.86947,0 -85.62526699999999,42.86947,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>5189 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 5189 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.539892,42.913172,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.539892,42.913172,0 -85.539892,42.913172,0 -85.539892,42.913172,0 -85.539892,42.913172,0 -85.539892,42.913172,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>5381 Division Ave S, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 5381 Division Ave S, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.66431300000001,42.8664,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.66431300000001,42.8664,0 -85.66431300000001,42.8664,0 -85.66431300000001,42.8664,0 -85.66431300000001,42.8664,0 -85.66431300000001,42.8664,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Lemmen Convenience Mart</name>
+		<address>544 68th St SW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Lemmen Convenience Mart<br>
+<b>Address:</b> 544 68th St SW, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.67683599999999,42.840686,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.67683599999999,42.840686,0 -85.67683599999999,42.840686,0 -85.67683599999999,42.840686,0 -85.67683599999999,42.840686,0 -85.67683599999999,42.840686,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>5450 Northland Dr NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 5450 Northland Dr NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.579213,43.061548,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.579213,43.061548,0 -85.579213,43.061548,0 -85.579213,43.061548,0 -85.579213,43.061548,0 -85.579213,43.061548,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>5500 Clyde Park Ave SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 5500 Clyde Park Ave SW, Wyoming, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68168300000001,42.864157,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>5500 Clyde Park SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 5500 Clyde Park SW, Wyoming, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68168300000001,42.864157,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 -85.68168300000001,42.864157,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>552 Ada Dr SE, Ada, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 552 Ada Dr SE, Ada, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.487093,42.954881,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.487093,42.954881,0 -85.487093,42.954881,0 -85.487093,42.954881,0 -85.487093,42.954881,0 -85.487093,42.954881,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>C Store</name>
+		<address>5556 28th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> C Store<br>
+<b>Address:</b> 5556 28th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.53089300000001,42.912933,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.53089300000001,42.912933,0 -85.53089300000001,42.912933,0 -85.53089300000001,42.912933,0 -85.53089300000001,42.912933,0 -85.53089300000001,42.912933,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>5568 Byron Center Ave SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 5568 Byron Center Ave SW, Wyoming, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.722548,42.863337,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.722548,42.863337,0 -85.722548,42.863337,0 -85.722548,42.863337,0 -85.722548,42.863337,0 -85.722548,42.863337,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Meijer</name>
+		<address>5960 Alpine Ave NW, Comstock Park, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Meijer<br>
+<b>Address:</b> 5960 Alpine Ave NW, Comstock Park, MI<br>
+<b>Price: </b> $3.82
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.82</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.689069,43.072022,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.689069,43.072022,0 -85.689069,43.072022,0 -85.689069,43.072022,0 -85.689069,43.072022,0 -85.689069,43.072022,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Friendly Food Shops</name>
+		<address>6045 Kalamazoo Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Friendly Food Shops<br>
+<b>Address:</b> 6045 Kalamazoo Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.624886,42.854496,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.624886,42.854496,0 -85.624886,42.854496,0 -85.624886,42.854496,0 -85.624886,42.854496,0 -85.624886,42.854496,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>6364 Division Ave S, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 6364 Division Ave S, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.663684,42.848222,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.663684,42.848222,0 -85.663684,42.848222,0 -85.663684,42.848222,0 -85.663684,42.848222,0 -85.663684,42.848222,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>6485 Belding Rd NE, Rockford, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 6485 Belding Rd NE, Rockford, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.508273,43.086814,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.508273,43.086814,0 -85.508273,43.086814,0 -85.508273,43.086814,0 -85.508273,43.086814,0 -85.508273,43.086814,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>C Store</name>
+		<address>66 E Bridge St, Rockford, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> C Store<br>
+<b>Address:</b> 66 E Bridge St, Rockford, MI<br>
+<b>Price: </b> $3.86
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.86</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.55988000000001,43.119576,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.55988000000001,43.119576,0 -85.55988000000001,43.119576,0 -85.55988000000001,43.119576,0 -85.55988000000001,43.119576,0 -85.55988000000001,43.119576,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Campau Corner</name>
+		<address>6785 Whitneyville Ave SE, Alto, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Campau Corner<br>
+<b>Address:</b> 6785 Whitneyville Ave SE, Alto, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.45911099999999,42.841823,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.45911099999999,42.841823,0 -85.45911099999999,42.841823,0 -85.45911099999999,42.841823,0 -85.45911099999999,42.841823,0 -85.45911099999999,42.841823,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Friendly Food Shops</name>
+		<address>6799 Cascade Rd SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Friendly Food Shops<br>
+<b>Address:</b> 6799 Cascade Rd SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.50019,42.915388,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.50019,42.915388,0 -85.50019,42.915388,0 -85.50019,42.915388,0 -85.50019,42.915388,0 -85.50019,42.915388,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Citgo</name>
+		<address>6820 Cascade Rd SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Citgo<br>
+<b>Address:</b> 6820 Cascade Rd SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.78
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.78</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.499809,42.913584,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.499809,42.913584,0 -85.499809,42.913584,0 -85.499809,42.913584,0 -85.499809,42.913584,0 -85.499809,42.913584,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Sunrise Auto Plaza</name>
+		<address>7100 Fulton St E, Ada, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Sunrise Auto Plaza<br>
+<b>Address:</b> 7100 Fulton St E, Ada, MI<br>
+<b>Price: </b> $3.83
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.83</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.493594,42.958225,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.493594,42.958225,0 -85.493594,42.958225,0 -85.493594,42.958225,0 -85.493594,42.958225,0 -85.493594,42.958225,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>747 Leonard St NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 747 Leonard St NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.687713,42.985598,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.687713,42.985598,0 -85.687713,42.985598,0 -85.687713,42.985598,0 -85.687713,42.985598,0 -85.687713,42.985598,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Family Fare</name>
+		<address>7599 Clyde Park Ave SW # A, Byron Center, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Family Fare<br>
+<b>Address:</b> 7599 Clyde Park Ave SW # A, Byron Center, MI<br>
+<b>Price: </b> $3.84
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.84</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.684333,42.827097,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.684333,42.827097,0 -85.684333,42.827097,0 -85.684333,42.827097,0 -85.684333,42.827097,0 -85.684333,42.827097,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Sunoco</name>
+		<address>777 44th St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Sunoco<br>
+<b>Address:</b> 777 44th St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.646393,42.884227,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.646393,42.884227,0 -85.646393,42.884227,0 -85.646393,42.884227,0 -85.646393,42.884227,0 -85.646393,42.884227,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>800 28th St SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 800 28th St SW, Wyoming, MI<br>
+<b>Price: </b> $3.76
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.76</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.686182,42.912759,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.686182,42.912759,0 -85.686182,42.912759,0 -85.686182,42.912759,0 -85.686182,42.912759,0 -85.686182,42.912759,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Cannonsburg Grist Mill</name>
+		<address>8000 Cannonsburg Road Northeast, Rockford, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Cannonsburg Grist Mill<br>
+<b>Address:</b> 8000 Cannonsburg Road Northeast, Rockford, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.470337,43.053907,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.470337,43.053907,0 -85.470337,43.053907,0 -85.470337,43.053907,0 -85.470337,43.053907,0 -85.470337,43.053907,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>801 Franklin St SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 801 Franklin St SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.75
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.75</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.649016,42.948665,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.649016,42.948665,0 -85.649016,42.948665,0 -85.649016,42.948665,0 -85.649016,42.948665,0 -85.649016,42.948665,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>808 44th St SW, Wyoming, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 808 44th St SW, Wyoming, MI<br>
+<b>Price: </b> $3.77
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.77</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.68514999999999,42.883809,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.68514999999999,42.883809,0 -85.68514999999999,42.883809,0 -85.68514999999999,42.883809,0 -85.68514999999999,42.883809,0 -85.68514999999999,42.883809,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Speedway</name>
+		<address>815 52nd St SE, Kentwood, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Speedway<br>
+<b>Address:</b> 815 52nd St SE, Kentwood, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.644757,42.869664,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.644757,42.869664,0 -85.644757,42.869664,0 -85.644757,42.869664,0 -85.644757,42.869664,0 -85.644757,42.869664,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>BP</name>
+		<address>8353 Byron Center Ave SW, Byron Center, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> BP<br>
+<b>Address:</b> 8353 Byron Center Ave SW, Byron Center, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.72328899999999,42.81297,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.72328899999999,42.81297,0 -85.72328899999999,42.81297,0 -85.72328899999999,42.81297,0 -85.72328899999999,42.81297,0 -85.72328899999999,42.81297,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Shell</name>
+		<address>8391 Byron Center Ave SW, Byron Center, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Shell<br>
+<b>Address:</b> 8391 Byron Center Ave SW, Byron Center, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.72299,42.812357,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.72299,42.812357,0 -85.72299,42.812357,0 -85.72299,42.812357,0 -85.72299,42.812357,0 -85.72299,42.812357,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Mobil Mart</name>
+		<address>8501 Algoma Ave NE, Rockford, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Mobil Mart<br>
+<b>Address:</b> 8501 Algoma Ave NE, Rockford, MI<br>
+<b>Price: </b> $3.85
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.85</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.611457,43.117756,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.611457,43.117756,0 -85.611457,43.117756,0 -85.611457,43.117756,0 -85.611457,43.117756,0 -85.611457,43.117756,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>876 Fuller Ave NE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 876 Fuller Ave NE, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.639438,42.978739,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.639438,42.978739,0 -85.639438,42.978739,0 -85.639438,42.978739,0 -85.639438,42.978739,0 -85.639438,42.978739,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>7-Eleven</name>
+		<address>888 Forest Hill Ave SE, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> 7-Eleven<br>
+<b>Address:</b> 888 Forest Hill Ave SE, Grand Rapids, MI<br>
+<b>Price: </b> $3.73
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.73</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.555196,42.946749,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.555196,42.946749,0 -85.555196,42.946749,0 -85.555196,42.946749,0 -85.555196,42.946749,0 -85.555196,42.946749,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>D&amp;W Quick Stop</name>
+		<address>9441 Cherry Valley Ave SE, Caledonia, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> D&amp;W Quick Stop<br>
+<b>Address:</b> 9441 Cherry Valley Ave SE, Caledonia, MI<br>
+<b>Price: </b> $3.88
+</div>]]></description>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.88</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.50748299999999,42.793143,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.50748299999999,42.793143,0 -85.50748299999999,42.793143,0 -85.50748299999999,42.793143,0 -85.50748299999999,42.793143,0 -85.50748299999999,42.793143,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Amoco</name>
+		<address>9633 Cherry Valley Ave SE, Caledonia, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Amoco<br>
+<b>Address:</b> 9633 Cherry Valley Ave SE, Caledonia, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.507434,42.789688,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.507434,42.789688,0 -85.507434,42.789688,0 -85.507434,42.789688,0 -85.507434,42.789688,0 -85.507434,42.789688,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>C Store</name>
+		<address>9807 Cherry Valley Ave SE, Caledonia, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> C Store<br>
+<b>Address:</b> 9807 Cherry Valley Ave SE, Caledonia, MI<br>
+<b>Price: </b> $3.87
+</div>]]></description>
+		<styleUrl>#Style2-point-2-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.87</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.50734,42.785916,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.50734,42.785916,0 -85.50734,42.785916,0 -85.50734,42.785916,0 -85.50734,42.785916,0 -85.50734,42.785916,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Pacific Pride</name>
+		<address>O-305 Lake Michigan Dr NW, Grand Rapids, MI</address>
+		<snippet></snippet>
+		<description><![CDATA[<div class="googft-info-window">
+<b>Name:</b> Pacific Pride<br>
+<b>Address:</b> O-305 Lake Michigan Dr NW, Grand Rapids, MI<br>
+<b>Price: </b> $3.74
+</div>]]></description>
+		<styleUrl>#Style2-point-1-map</styleUrl>
+		<ExtendedData>
+			<Data name="cost">
+				<value>3.74</value>
+			</Data>
+		</ExtendedData>
+		<MultiGeometry>
+			<Point>
+				<coordinates>-85.792757,42.973435,0</coordinates>
+			</Point>
+			<LinearRing>
+				<coordinates>
+					-85.792757,42.973435,0 -85.792757,42.973435,0 -85.792757,42.973435,0 -85.792757,42.973435,0 -85.792757,42.973435,0 
+				</coordinates>
+			</LinearRing>
+		</MultiGeometry>
+	</Placemark>
+	<Placemark>
+		<name>Van Andel To Gas Station</name>
+		<styleUrl>#m_ylw-pushpin</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-85.65635050773351,42.96992548595219,0 -85.6563652990239,42.97021083260185,0 -85.65766323886,42.97022128321728,0 -85.65848802966615,42.97023504567414,0 -85.658852493895,42.97024196012077,0 -85.66038381423303,42.9702968476868,0 -85.66167681741538,42.97032390731757,0 -85.66367532734951,42.97038415048144,0 -85.66395837976862,42.97040412164833,0 -85.66447704432886,42.97050508766395,0 -85.66555017765315,42.97055669570889,0 -85.66667596847951,42.97055047053684,0 -85.667523577238,42.97052895122334,0 -85.66750252529948,42.97032495469348,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>
